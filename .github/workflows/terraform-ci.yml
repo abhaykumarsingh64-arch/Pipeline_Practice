@@ -20,7 +20,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: Pipeline_Practice/Environment/Parent_module
+        working-directory: Environment/Parent_module
 
     env:
       ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
