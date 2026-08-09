@@ -1,5 +1,5 @@
 variable "rgs" {
-  #   type = map(string)
+  
 }
 variable "Vnet" {}
 
