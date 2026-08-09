@@ -13,7 +13,6 @@ permissions:
   contents: read
 
 jobs:
-
   terraform-plan:
 
     runs-on: ubuntu-latest
