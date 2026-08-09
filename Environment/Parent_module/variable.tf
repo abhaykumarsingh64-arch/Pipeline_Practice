@@ -1,3 +1,9 @@
-variable "rgs" {}
-variable "Vnet" {}
-variable "subnet" {}
+variable "rgs" {
+
+}
+variable "Vnet" {
+
+}
+variable "subnet" {
+  
+}
