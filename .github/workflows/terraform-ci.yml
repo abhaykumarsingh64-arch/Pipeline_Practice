@@ -59,4 +59,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: terraform-plan
-          path: Pipeline_Practice/Environment/Parent_module/tfplan
+          path: Environment/Parent_module/tfplan
