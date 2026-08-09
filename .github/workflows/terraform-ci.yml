@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   terraform-plan:
@@ -34,17 +35,13 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.13.2
 
       - name: Azure Login
         uses: azure/login@v2
         with:
-          creds: |
-            {
-              "clientId":"${{ secrets.ARM_CLIENT_ID }}",
-              "clientSecret":"${{ secrets.ARM_CLIENT_SECRET }}",
-              "subscriptionId":"${{ secrets.ARM_SUBSCRIPTION_ID }}",
-              "tenantId":"${{ secrets.ARM_TENANT_ID }}"
-            }
+          creds:  ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Terraform Init
         run: terraform init
