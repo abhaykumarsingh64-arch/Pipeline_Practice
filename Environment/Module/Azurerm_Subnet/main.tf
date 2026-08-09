@@ -1,5 +1,5 @@
 resource "azurerm_subnet" "subnet" {
-#   for_each = var.subnet
+  #   for_each = var.subnet
   # depends_on = [ resource.azurerm_virtual_network.vnet ]
   name                 = var.name
   resource_group_name  = var.resource_group_name

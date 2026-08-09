@@ -1,5 +1,5 @@
 # variable "Vnet" {
-  
+
 # }
 variable "name" {}
 variable "location" {}
